@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #e0d4f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.background-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.circle-1, .circle-2 {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, #2b356b, transparent);
+}
+
+.circle-1 {
+  width: 200px;
+  height: 200px;
+  left: 5%;
+  top: 10%;
+}
+
+.circle-2 {
+  width: 150px;
+  height: 150px;
+  right: 5%;
+  bottom: 10%;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #2b356b;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.google-login {
+  background-color: #4285F4;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.google-login:hover {
+  background-color: #357ae8;
+}
+
+.apple-login {
+  background-color: #000;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.apple-login:hover {
+  background-color: #333;
+}
+
+.or {
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #2b356b;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2b356b;
+  box-shadow: 0 0 8px rgba(122, 45, 255, 0.5);
+}
+
+.error-message {
+  color: #e63946;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.forgot-password,
+.create-account {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #2b356b;
+  text-decoration: none;
+}
+
+.forgot-password:hover,
+.create-account a:hover {
+  text-decoration: underline;
+}
